@@ -1,0 +1,5 @@
+X=[[50000,1],[60000,0],[30000,1],[40000,0]]
+Y=['Yes','Yes','No','No']
+from sklearn.naive_bayes import GaussianNB
+clf=GaussianNB().fit(X,Y)
+print(clf.predict([[45000,1]]))

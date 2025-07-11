@@ -1,0 +1,5 @@
+from sklearn.mixture import GaussianMixture
+X=[[1],[2],[3],[10],[11],[12]]
+gmm=GaussianMixture(n_components=2)
+gmm.fit(X)
+print(gmm.means_)

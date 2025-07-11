@@ -1,0 +1,6 @@
+from sklearn.tree import DecisionTreeClassifier
+X=[[600],[700],[300],[800]]
+Y=['Bad','Good','Bad','Good']
+clf=DecisionTreeClassifier()
+clf.fit(X,Y)
+print(clf.predict([[750]]))

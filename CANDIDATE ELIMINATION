@@ -1,0 +1,19 @@
+data = [
+    ['Sunny','Warm','Normal','Yes'],
+    ['Sunny','Warm','High','Yes'],
+    ['Rainy','Cold','High','No'],
+    ['Sunny','Warm','High','Yes']
+]
+
+S = data[0][:-1]
+G = [['?','?','?']]
+
+for row in data[1:]:
+    if row[-1]=='Yes':
+        for i in range(len(S)):
+            if S[i]!=row[i]: S[i]='?'
+    else:
+        pass  # simple version skips G refinement
+
+print('S:', S)
+print('G:', G)

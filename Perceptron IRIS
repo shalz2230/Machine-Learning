@@ -1,0 +1,5 @@
+from sklearn.linear_model import Perceptron
+from sklearn.datasets import load_iris
+iris=load_iris()
+clf=Perceptron().fit(iris.data,iris.target)
+print(clf.predict([iris.data[0]]))

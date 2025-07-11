@@ -1,0 +1,6 @@
+from sklearn.linear_model import LogisticRegression
+X=[[1],[2],[3],[4]]
+Y=[0,0,1,1]
+clf=LogisticRegression()
+clf.fit(X,Y)
+print(clf.predict([[1.5]]))
